@@ -4,10 +4,8 @@ This example shows how to create an story page with `IFRAME` using News and the 
 
 ## Deploy your own
 
-Generate this example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+Generate this example using `(https://www.adball.tech/?amp):
 
-[![Deploy with Vercel](https://vercel.com/button)]
-(https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/amp-story&project-name=amp-story&repository-name=amp-block)
 
 ## How to use
 
