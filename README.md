@@ -1,4 +1,4 @@
-# Google Story App
+# Google Story
 
 This example shows how to create an story page with `IFRAME` using News and the AMP feature.
 
@@ -11,8 +11,6 @@ Generate this example using [Vercel](https://vercel.com?utm_source=github&utm_me
 
 ## How to use
 
-Execute [`create-next-app`]
-(https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm]1(https://pnpm.io) to bootstrap the example :
 
 ```bash
 npx create-next-app --example amp-story amp-story-app
