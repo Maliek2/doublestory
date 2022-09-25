@@ -6,7 +6,8 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Story in Next.js</title>
+        <title>Web Design Theme</title>
+        <h1>Web Apk Source</h1>
         
       </Head>
 
