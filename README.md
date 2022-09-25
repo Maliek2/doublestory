@@ -1,10 +1,10 @@
-# Google AMP Story
+# Google Story
 
-This example shows how to create an AMP page with `amp-story` using Next.js and the AMP feature.
+This example shows how to create an story page with `IFRAME` using News.js and the AMP feature.
 
 ## Deploy your own
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+Generate this example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/amp-story&project-name=amp-story&repository-name=amp-story)
 
@@ -24,4 +24,4 @@ yarn create next-app --example amp-story amp-story-app
 pnpm create next-app --example amp-story amp-story-app
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Deploy it to the cloud with [Vercel](https://www.adball.tech/new?#  ) ([Documentation](https://nextjs.org/docs/deployment)).
