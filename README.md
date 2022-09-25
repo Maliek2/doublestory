@@ -4,7 +4,7 @@ This example shows how to create an story page with `IFRAME` using News and the 
 
 ## Deploy your own
 
-Generate this example using `(https://www.adball.tech/?amp):
+Generate this example using ``(https://www.adball.tech/?amp)``:
 
 
 ## How to use
