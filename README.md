@@ -1,16 +1,21 @@
-# Google Story
+# Google Story App
 
-This example shows how to create an story page with `IFRAME` using News.js and the AMP feature.
+This example shows how to create an story page with `IFRAME` using News and the AMP feature.
 
 ## Deploy your own
 
 Generate this example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/amp-story&project-name=amp-story&repository-name=amp-story)
+[![Deploy with Vercel](https://vercel.com/button)]
+(https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/amp-story&project-name=amp-story&repository-name=amp-block)
 
 ## How to use
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+Execute [`create-next-app`]
+(https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm]
+(https://docs.npmjs.com/cli/init), [Yarn]
+(https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm]
+(https://pnpm.io) to bootstrap the example :
 
 ```bash
 npx create-next-app --example amp-story amp-story-app
