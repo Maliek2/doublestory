@@ -1,3 +1,4 @@
+
 import Head from 'next/head'
 
 export const config = { amp: true }
@@ -7,9 +8,11 @@ const Home = () => {
     <>
       <Head>
         <title>Web Design Theme</title>
-        <h1>Web Apk Source</h1>
+        
+
         
       </Head>
+       <h1>Blog News</h1>
 
       
 
