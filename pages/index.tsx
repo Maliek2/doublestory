@@ -7,18 +7,7 @@ const Home = () => {
     <>
       <Head>
         <title>Example AMP Story in Next.js</title>
-        <script
-          async
-          key="amp-story"
-          custom-element="amp-story"
-          src="https://cdn.ampproject.org/v0/amp-story-1.0.js"
-        />
-        <script
-          async
-          key="amp-video"
-          custom-element="amp-video"
-          src="https://cdn.ampproject.org/v0/amp-video-0.1.js"
-        />
+        
       </Head>
 
       <amp-story
