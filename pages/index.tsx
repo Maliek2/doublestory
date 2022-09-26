@@ -13,11 +13,7 @@ const Home = () => {
         
       </Head>
       <h1>Blog News</h1>
-      <!-- ## Defining the Consent Flow -->
-  <!--
-    We define a basic consent flow using the `promptUISrc` to load our custom consent iframe.
-  -->
- 
+
  
 
       
