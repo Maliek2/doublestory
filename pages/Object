@@ -1,0 +1,30 @@
+private GameObject icon;
+private bool nativeAdLoaded;
+private NativeAd nativeAd;
+void Update() {
+    ...
+
+    if (this.nativeAdLoaded) {
+        this.nativeAdLoaded = false;
+        // Get Texture2D for icon asset of native ad.
+        Texture2D iconTexture = this.nativeAd.GetIconTexture();
+
+        icon = GameObject.CreatePrimitive(PrimitiveType.Quad);
+        icon.transform.position = new Vector3(1, 1, 1);
+        icon.transform.localScale = new Vector3(1, 1, 1);
+        icon.GetComponent<Renderer>().material.mainTexture = iconTexture;
+
+        // Register GameObject that will display icon asset of native ad.
+        if (!this.nativeAd.RegisterIconImageGameObject(icon))
+        {
+            // Handle failure to register ad asset.
+        }
+    }
+}
+...
+
+private void HandleNativeAdLoaded(object sender, NativeAdEventArgs args) {
+    Debug.Log("Native ad loaded.");
+    this.nativeAd = args.nativeAd;
+    this.nativeAdLoaded = true;
+}
