@@ -1,8 +1,0 @@
-const {
-  consentStatus,
-  isConsentFormAvailable,
-  isRequestLocationInEeaOrUnknown,
-} = await UMP.requestConsentInfoUpdate({
-   debugGeography: UMP.DEBUG_GEOGRAPHY.EEA,
-   testDeviceIds: ['TEST-DEVICE-HASHED-ID'],
-})
