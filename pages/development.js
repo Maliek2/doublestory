@@ -12,7 +12,7 @@ const sharedConfig = {
 	mode: 'development',
 	target: 'browserslist',
 	output: {
-		filename: '[name]/index.min.js',
+		filename: '[pages]/index.tsx',
 		path: join( __dirname, '..', '..', 'build' ),
 	},
 };
