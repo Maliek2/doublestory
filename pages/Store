@@ -1,0 +1,9 @@
+import { createReduxStore, register } from '@wordpress/data';
+
+const store = createReduxStore( 'demo', {
+	reducer: ( state = 'OK' ) => state,
+	selectors: {
+		getValue: ( state ) => state,
+	},
+} );
+register( store );
