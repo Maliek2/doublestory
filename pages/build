@@ -1,0 +1,63 @@
+# Install CUDA
+choco install cuda --version=11.0.3
+
+# Install Windows SDK
+# WARNING: If you have versions of Windows SDK earlier than Version 1809,
+# compiling the plugin will fail. Make sure to uninstall earlier versions.
+choco install -y vcredist2010 vcredist2013 vcredist140 windows-sdk-10-version-1809-all
+
+# Install Vulkan
+choco install vulkan-sdk --version=1.2.182.0
+
+# Install CMake 3.22.3
+choco install cmake -y --version=3.22.3
+
+# Install 7zip (used to extract Google's webrtc library after download)
+choco install 7zip
+
+# Setting up environment variables
+setx CUDA_PATH "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0" /m
+setx VULKAN_SDK "C:\VulkanSDK\1.2.182.0" /m
+
+
+#install packages
+sudo apt install -y libc++1 libc++abi1 vulkan-utils libvulkan1 libvulkan-dev libglib2.0-dev python3-venv lld clang-10 libc++-10-dev libc++abi-10-dev freeglut3-dev
+
+# Install CUDA SDK
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
+sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
+sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/3bf863cc.pub
+sudo add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /"
+sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+sudo apt update
+sudo apt install -y nvidia-driver-510 libnvidia-gl-510 libnvidia-decode-510 libnvidia-encode-510
+sudo apt install -y cuda-toolkit-11-0
+
+# Install CMake 3.22.3
+sudo apt install -y libssl-dev
+sudo apt purge -y cmake
+wget https://github.com/Kitware/CMake/releases/download/v3.22.3/cmake-3.22.3.tar.gz
+tar xvf cmake-3.22.3.tar.gz
+cd cmake-3.22.3
+./bootstrap && make && sudo make install
+
+
+
+
+
+# Install Android NDK r21b
+wget https://dl.google.com/android/repository/android-ndk-r21b-linux-x86_64.zip
+
+# Set Android NDK root path to `ANDROID_NDK` environment variable
+echo "export ANDROID_NDK=~/android-ndk-r21d/" >> ~/.profile
+
+# Install CMake 3.22.3
+sudo apt install -y libssl-dev
+sudo apt purge -y cmake
+wget https://github.com/Kitware/CMake/releases/download/v3.22.3/cmake-3.22.3.tar.gz
+tar xvf cmake-3.22.3.tar.gz
+cd cmake-3.22.3
+./bootstrap && make && sudo make install
+
+# Install pkg-config, zip
+sudo apt install -y pkg-config zip
